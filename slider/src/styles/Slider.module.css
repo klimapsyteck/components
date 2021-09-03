@@ -1,0 +1,52 @@
+.container {
+    width: 80%;
+    height: 70%;    
+}
+
+.slider{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+   width: 1000px; 
+   height: 600px;
+   border-radius: 10px;
+}
+
+.arrowRight {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: green;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrowLeft {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: green;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slideActive {
+    display: block;
+    transition-duration: 1s ease;
+    transform: scale(1.08);
+}
+
+.slideDisable {
+    display: none;
+    transition-duration: 1s ease;
+    transform: scale(1.08);
+}
